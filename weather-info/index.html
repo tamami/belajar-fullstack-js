@@ -19,14 +19,14 @@ var prepareData = function(units) {
     }
   }
 
-#(document).ready(function() {
+$(document).ready(function() {
     $('.btn-metric').click(function() {
         prepareData('metric')
       })
     $('.btn-imperial').click(function() {
         prepareData('imperial')
       })
-  }
+  })
 
 function getData(url, cityName, appId, units) {
   var request = $.ajax({
@@ -54,7 +54,7 @@ function fetchData(forecast) {
   html += '<h3> Weather Forecast for ' +
     cityName + ', ' + country + '</h3>'
   forecast.list.forEach(function(forecastEntry, index, list) {
-      html + '<p>' +
+      html += '<p>' +
         forecastEntry.dt_txt + ': ' + forecastEntry.main.temp + '</p>'
     })
 
