@@ -3,7 +3,7 @@ $(document).ready(function() {
   var parseJavaScriptKey = ''
 
   Parse.initialize(parseApplicationId, parseJavaScriptKey)
-  var Text = Parse.Object.extend('Test')
+  var Test = Parse.Object.extend('Test')
   var test = new Test()
 
   $('.btn-save').click(function() {
