@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var parseApplicationId = 'publicparseid'
-  var parseJavaScriptKey = ''
+  var parseJavaScriptKey = 'rahasia'
 
   Parse.initialize(parseApplicationId, parseJavaScriptKey)
   var Test = Parse.Object.extend('Test')
